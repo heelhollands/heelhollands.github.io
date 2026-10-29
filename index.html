@@ -2,10 +2,28 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://heelhollands.eu.pythonanywhere.com/">
-    <title>Doorverwijzen...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heel Hollands</title>
+    <style>
+        /* Zorg dat de iframe het hele scherm vult en geen randen heeft */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <p>Je wordt doorgestuurd. Als dit niet automatisch gebeurt, <a href="https://heelhollands.eu.pythonanywhere.com/">klik dan hier</a>.</p>
+    <!-- Hier wordt jouw PythonAnywhere-site geladen -->
+    <iframe src="https://heelhollands.eu.pythonanywhere.com/" 
+            title="Heel Hollands Radioprogramma">
+    </iframe>
 </body>
 </html>
