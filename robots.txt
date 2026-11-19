@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://heelhollands.github.io/sitemap.xml

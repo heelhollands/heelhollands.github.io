@@ -3,29 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heel Hollands</title>
-    <style>
-        /* Zorg dat de iframe het hele scherm vult en geen randen heeft */
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-        iframe {
-            display: block;
-            width: 100vw;
-            height: 100vh;
-            border: none;
-        }
-    </style>
+    <title>Heel Hollands – Nederlandstalig radioprogramma | Luister live</title>
+    <meta name="description" content="Heel Hollands is een wekelijks radioprogramma vol Nederlandstalige muziek. Bekijk het uitzendschema en luister live via onze zenders.">
+    <link rel="canonical" href="https://heelhollands.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:site_name" content="Heel Hollands">
+    <meta property="og:title" content="Heel Hollands – Nederlandstalig radioprogramma">
+    <meta property="og:description" content="Wekelijks radioprogramma vol Nederlandstalige muziek. Luister live via onze zenders.">
+    <meta property="og:url" content="https://heelhollands.github.io/">
+    <meta property="og:image" content="https://heelhollands.github.io/static/foto2.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RadioSeries",
+        "name": "Heel Hollands",
+        "description": "Wekelijks, gesyndiceerd radioprogramma met Nederlandstalige muziek.",
+        "url": "https://heelhollands.github.io/",
+        "inLanguage": "nl",
+        "image": "https://heelhollands.github.io/static/foto2.jpg"
+    }
+    </script>
 </head>
 <body>
-    <!-- Hier wordt jouw PythonAnywhere-site geladen -->
-    <!-- <iframe src="https://heelhollands.eu.pythonanywhere.com/" 
-            title="Heel Hollands Radioprogramma"> -->
-    <!-- <iframe src="http://144.91.113.224/" title="Heel Hollands Radioprogramma"></iframe>
-    </iframe> -->
-    <iframe src="https://heelhollands.duckdns.org/" title="Heel Hollands Radioprogramma"></iframe>
+    <div class="bg-glow"></div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo">HEEL <span>HOLLANDS</span></a>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/over/">Over ons</a>
+                <a href="/uitzendschema/">Uitzendschema</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+<section class="hero-full">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <span class="badge">Live op jouw station</span>
+        <h1>De mooiste<br><span class="text-gradient">Nederlandstalige muziek</span></h1>
+        <p>Heel Hollands is hét radioprogramma vol passie voor het Nederlandstalige lied. Wekelijks 2 x 1 uur, vol muziek en gezelligheid.</p>
+        <a class="knop primair" href="/uitzendschema/">Bekijk alle zenders</a>
+    </div>
+</section>
+<section class="weetje-blok">
+    <h2>🇳🇱 Oer-Hollands weetje van de dag</h2>
+    <p><strong>Wist je dat:</strong> <span id="weetje">Nederland heeft meer fietsen dan inwoners.</span></p>
+</section>
+<section class="streams-sectie">
+    <h2 class="sectie-titel">Onze zenders</h2>
+    <div class="stream-grid">
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>Atlantica Breda</h3><p>Maandag om 13:00 - 15:00</p></div>
+            <button class="play-knop" data-url="https://caster05.streampakket.com/proxy/atlantica?mp=/stream"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>Timeless Radio</h3><p>Maandag om 13:00 - 15:00</p></div>
+            <button class="play-knop" data-url="https://stream-10.pmteurope.com:8004/stream"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>SuperMixFM</h3><p>Woensdag om 11:00 - 13:00</p></div>
+            <button class="play-knop" data-url="https://fayalobi.beheerstream.nl/8110/stream"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>Radio Mexico</h3><p>Woensdag om 18:00 - 20:00</p></div>
+            <button class="play-knop" data-url="https://fra-pioneer08.dedicateware.com:2255/stream"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>NijsRadio</h3><p>Vrijdag om 14:00 - 16:00</p></div>
+            <button class="play-knop" data-url="https://streammuziek.nl/listen/nijsradio/radio.mp3"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>Radio MeerHits</h3><p>Vrijdag om 16:00 - 18:00</p></div>
+            <button class="play-knop" data-url="https://ams-pioneer02.dedicateware.com:2675/stream"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>Rondia Music</h3><p>Vrijdag om 20:00 - 22:00</p></div>
+            <button class="play-knop" data-url="https://mars.streamerr.co:7094/stream"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>ZeeuwsFM</h3><p>Zaterdag om 13:00 - 15:00</p></div>
+            <button class="play-knop" data-url="http://server-28.stream-server.nl:8838/stream"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>Radio Delecica</h3><p>Zaterdag om 20:00 - 22:00</p></div>
+            <button class="play-knop" data-url="https://server-28.stream-server.nl:2000/8910/stream"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>Maasduinen Radio</h3><p>Zondag om 10:00 - 12:00</p></div>
+            <button class="play-knop" data-url="https://radio.omroepmaasduinen.nl/listen/omroepmaasduinen/radio.mp3"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+        <div class="stream-kaart">
+            <div class="stream-info"><h3>HollandFM</h3><p>Zondag om 13:00 - 15:00</p></div>
+            <button class="play-knop" data-url="https://server2.inetcast.nl:2435/stream"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play</button>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="site-footer">
+        <p>© 2026 Heel Hollands — Gemaakt met passie voor het Nederlandstalige lied 🧀</p>
+    </footer>
+    <audio id="audio-player" preload="none"></audio>
+    <script src="/script.js"></script>
 </body>
 </html>
